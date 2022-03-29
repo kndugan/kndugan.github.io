@@ -1,17 +1,259 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio for Kristine Dugan</title>
+  <meta charset="utf-8">
+  <title>Kristine Dugan Portfolio 🤙🏽</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/flexslider.css">
+  <link rel="stylesheet" type="text/css" href="css/animate.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="images/favicon.png">
+
+  <!-- Color Scheme -->
+  <link rel="stylesheet" type="text/css" href="css/colors/black.css">
+
+  <!-- Fonts -->
+  <link href="http://fonts.googleapis.com/css?family=Montserrat:400" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet" type="text/css">
+
 </head>
-
 <body>
-    <h1>Portfolio for Kristine Dugan</h1>
 
-    <p>Aloha from Kauai, Hawaii!<p>
-        <img src = "kris.jpg" alt="Aloha from Kristine" width="500"> 
+  <!-- Preloader -->
+  <div id="mask">
+    <div id="loader">      
+    </div>
+  </div>
+  <!-- End Preloader -->
+
+  <!-- Background -->
+  <div id="backgrounds">
+    <ul class="slides">
+      <li><img src="images/bg/1.png" alt=""></li>
+      <li><img src="images/bg/2.png" alt=""></li>
+      <li><img src="images/bg/3.png" alt=""></li>
+    </ul>
+  </div>
+  <!-- End Background -->
+  
+
+  <!-- Header -->
+  <header class="navbar navbar-default navbar-fixed-top" id="topnav">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a id="logo" class="navbar-brand" href="index.html"><img src="images/logo-grey.png" alt=""></a>
+      </div>
+      <div class="collapse navbar-collapse" id="navigation">
+        <ul class="nav navbar-nav navbar-right" id="nav">
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#bio">Video Bio</a></li>
+          <li><a href="#history">History</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <!-- End Header -->
+
+  <!-- Home -->
+  <div id="home">
+    <div class="banner">
+      <div class="container">        
+        <div id="home-slider" class="flexslider">
+          <ul class="slides">
+            <li>
+              <h1>Aloha!</h1>
+              <h3>I'm Kristine, a web developer in Kauai, Hawaii.</h3>
+              <a href="#about" class="btn btn-custom">Read more</a>
+              <a href="projects.html" class="btn btn-empty">View my projects</a>
+            </li>
+            <li>
+              <h1>My Passion Is</h1>
+              <h3>Making you look great online so you can grow your business.</h3>
+              <a href="#bio" class="btn btn-custom">Watch Bio</a>
+              <a href="#contact" class="btn btn-empty">Contact me</a>
+            </li>
+          </ul>
+        </div>                  
+      </div>
+    </div>
+  </div>
+  <!-- End Home -->
+
+  <!-- About -->
+  <section id="about" class="grey">
+    <div class="container">
+      <div class="picture">
+        <img src="images/kristine-dugan-150x150.jpeg" class="img-circle">
+      </div>
+      <div class="title">
+        <h1>About</h1>
+        <hr>
+      </div>
+      <p class="about-text">I’m a dog mom to Twinkie and Lily. I’m a director of marketing for a real estate team on Kauai, Hawaii. But most importantly, I’m a web developer. For more than ten years, I’ve helped small businesses create a relevant brand and websites so they can connect with their customers. Now, I’m taking my web development to the next level by attending a professional coding bootcamp through MIT to improve my web development skills.</p>
+      <p class="about-text">You can learn more about what I’m working on and link up with me through one of my social profiles below or <a href="#contact">contact me</a>. Reach out to me! I’d welcome the opportunity to virtually connect!  </p>
+      <div class="social-container">
+        <ul class="about-socials">
+          <li>
+            <a target="_blank" href="https://twitter.com/kristinedugan"><i class="fa fa-twitter fa-2x"></i></a>
+          </li>
+          <li>
+            <a target="_blank" href="https://github.com/kndugan"><i class="fa fa-github fa-2x"></i></a>
+          </li>
+          <li>
+            <a target="_blank" href="https://www.linkedin.com/in/kristinedugan/"><i class="fa fa-linkedin fa-2x"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <!-- End About -->
+
+   <!-- Video CV -->
+   <section id="bio">
+    <div class="container">
+      <div class="title">
+        <h1>Video Bio</h1>
+        <hr>
+        <div class="embed-youtube">
+          <iframe src="https://www.youtube.com/embed/eYKoOgg8OU8" width="750" height="563"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Video CV -->
+
+  <!-- Timeline -->
+  <section id="history" class="grey">    
+    <div class="container">
+      <div class="title">
+        <h1>My History</h1>
+        <hr>
+      </div>
+      <ul class="timeline">
+        <li class="year">2022</li>
+        <li class="animated hiding" data-animation="fadeInLeft">
+          <div class="timeline-panel left">
+            <h4>Started Bootcamp at MIT</h4>
+            <p>Now, I’m taking my web development to the next level by attending a professional coding bootcamp through MIT to improve my web development skills. During this Bootcamp, I’m excited to learn the web development framework of MERN Stack (MongoDB, ExpressJS, React and NodeJS). 
+            </p>
+            <span class="date">DEC 15 2021</span>
+          </div>
+        </li>
+        <li class="animated hiding" data-animation="fadeInRight">
+          <div class="timeline-panel right">
+            <h4>Started working as a Marketing Director</h4>
+            <p>After college, I pivoted to digital marketing including web design, content, social media, and video marketing in the real estate industry. I love digital marketing and realize my true passion is in helping business owners create clarity in their marketing to increase sales while providing a 5-star experience to their customers.</p>
+            <span class="date">JUL 5 2005</span>
+          </div>
+        </li>
+        <li class="animated hiding" data-animation="fadeInLeft">
+          <div class="timeline-panel left">
+            <h4>Bachelor’s degree in Management</h4>
+            <p>While at Indiana University, Bloomington I studied Management, Business, and Finance. I expanded my computer knowledge in Excel and Access. Paired with business courses, I began to understand the cost benefit analysis of technology in business to increase efficiency and grow profits.</p>
+            <span class="date">AUG 6 2004</span>
+          </div>
+        </li>
+        <li class="animated hiding" data-animation="fadeInRight">
+          <div class="timeline-panel right">
+            <h4>Graduated from High School</h4>
+            <p>During high school I was introduced to computers and the power they have if one understands how to program them. I was able to design Excel Spreadsheets to calculate sporting statistics for my varsity high school softball and basketball team.</p>
+            <span class="date">JUN 4 1999</span>
+          </div>
+        </li>
+        <li class="animated hiding" data-animation="fadeInLeft">
+          <div class="timeline-panel left">
+            <h4>I was Born</h4>
+            <p>I was born in Las Vegas, Nevada to amazing parents that taught me to be independent, create what I desire in life by working hard, and to always treat others with kindness.  </p>
+            <span class="date">NOV 2 1980</span>
+          </div>
+        </li>
+        <li class="year"><i class="fa fa-road"></i></li>
+      </ul>
+    </div>
+  </section>
+  <!-- End Timeline -->
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="container">
+      <div class="title">
+        <h1>Let's Connect</h1>
+        <hr>
+        <p>"Alone we can do so little together we can do so much." – Helen Keller</p>
+      </div>
+      <div class="col-md-6 col-md-offset-3">        
+        <form method="POST" action="contact.php" id="contact-form" class="animated hiding" data-animation="fadeInLeft">
+          <div class="form-group">
+            <input name="fullname" type="text" class="form-control input-lg" placeholder="Full Name">
+          </div>
+          <div class="form-group">
+            <input name="email" type="email" class="form-control input-lg" placeholder="Email">
+          </div>
+          <div class="form-group">
+            <input name="phone" type="text" class="form-control input-lg" placeholder="Phone">
+          </div>
+          <div class="form-group">
+            <textarea name="message" class="form-control input-lg" placeholder="Message"></textarea>
+          </div>
+          <div class="form-group center">
+            <input type="submit" class="btn btn-dark" value="Submit Form">
+          </div>    
+        </form>
+        <div class="sent">
+          <span>Mahalo! Your message has been sent. I will get back to you shortly!</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Contact -->
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <ul class="socials">
+        <li>
+          <a target="_blank" href="https://twitter.com/kristinedugan"><i class="fa fa-twitter fa-2x"></i></a>
+        </li>
+        <li>
+          <a target="_blank" href="https://github.com/kndugan"><i class="fa fa-github fa-2x"></i></a>
+        </li>
+        <li>
+          <a target="_blank" href="https://www.linkedin.com/in/kristinedugan/"><i class="fa fa-linkedin fa-2x"></i></a>
+        </li>
+      </ul>
+      <h5 class="footer-text">Designed wtih Aloha ❤ by Kristine Dugan. | &copy; 2022 All Rights Reserved.</h5>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+  
+  <!-- Libraries -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/flexslider.js"></script>
+  <script type="text/javascript" src="js/jquery.appear.js"></script>
+  <script type="text/javascript" src="js/jquery.nav.js"></script>
+  <script type="text/javascript" src="js/jquery.mb.YTPlayer.js"></script>
+  <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+  <script type="text/javascript" src="js/jquery.validation.min.js"></script>
+
+
+  <!-- Main.js file -->
+  <script type="text/javascript" src="js/main.js"></script>
 </body>
-
 </html>
