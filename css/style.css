@@ -145,18 +145,6 @@ section.parallax {
   background-size: cover;
   background-position: center center;
 }
-/* =Video
--------------------------------------------------------------- */
-/* #video-wrapper {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-}
-#bgndVideo {
-  display: none;
-} */
 
 /* =Header
 -------------------------------------------------------------- */
@@ -216,6 +204,7 @@ section.parallax {
 .banner .btn-custom {
   margin-right: 10px;
 }
+
 /* =About
 -------------------------------------------------------------- */
 .about-text {
@@ -313,7 +302,7 @@ section.parallax {
   line-height: inherit;
 }
 
-/* = Video Bio 
+/* = Video Bio to be responsive
 -------------------------------------------------------------- */
 .embed-youtube {
   position: relative;
@@ -335,7 +324,7 @@ section.parallax {
   height: 100%;
 }
 
-/* =Timeline
+/* =History Timeline
 -------------------------------------------------------------- */
 .timeline {
   padding: 0;
@@ -455,7 +444,8 @@ section.parallax {
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
 }
-/* =Services
+
+/* =Overview
 -------------------------------------------------------------- */
 #services-box {
   text-align: center;
@@ -557,7 +547,7 @@ section.parallax {
   margin-right: 10px;
 }
 
-/* =Project
+/* =Project Skills
 -------------------------------------------------------------- */
 #filters {
   padding: 0;
@@ -761,6 +751,7 @@ section.parallax {
 .sent span {
   font-size: 18px;
 }
+
 /* =Footer
 -------------------------------------------------------------- */
 footer {
@@ -806,6 +797,7 @@ footer {
 .socials li a .fa {
   line-height: inherit;
 }
+
 /* =Media Queries
 -------------------------------------------------------------- */
 @media (min-width: 992px) {

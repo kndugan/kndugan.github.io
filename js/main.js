@@ -72,11 +72,6 @@ $(document).ready(function(){
     slideshowSpeed: 5000
   });
   
-  //Video Background
-  if ($('.player').length) {
-    $(".player").mb_YTPlayer();
-  };
-  
   //Nav Selection
   $('#nav').onePageNav({
     currentClass: 'active',
@@ -99,7 +94,7 @@ $(document).ready(function(){
     }    
   },{accY: -150});
 
-  //Services Tabs
+  //Overview Tabs
   $('.services li a').click(function (e) {
     e.preventDefault()
     $(this).tab('show')
@@ -110,71 +105,6 @@ $(document).ready(function(){
     effects: ['fade','scale', 'rotateX'],
     easing: 'windup'
   });
-
-  //Portfolio Modal
-  // $('.single-project').click(function(){    
-  //   var image = $(this).attr('href'),
-  //       title = $(this).find('h3').text(),    
-  //       project = '<div class="modal fade" id="project-modal"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button><h4 class="modal-title">' + title + '</h4></div><div class="modal-body"><img src="' + image + '" alt=""></div></div></div></div>';
-  //   $(project).modal()
-  //   .on('hidden.bs.modal', function () {
-  //     $(this).remove();      
-  //   })
-  //   .on('shown.bs.modal', function (e) {
-  //     $('.modal-body').append('<div class="control" id="prev"><a href="#"></a></div>')
-  //     .on('click', '#prev', function(){      
-  //       var modalImage = $(this).parent().find('img'),
-  //           currentImage = modalImage.attr('src'),
-  //           project = $('.single-project[href*="'+ currentImage +'"]').closest('li'),
-  //           prevProject = project.prev(),            
-  //           prevImage = prevProject.find('a').attr('href'),
-  //           prevTitle = prevProject.find('h3').text();
-  //       if (!project.is(':first-child')) {
-  //         modalImage.fadeOut(300, function() {
-  //           modalImage.attr('src', prevImage);
-  //         }).fadeIn(300);
-  //         $('.modal-title').fadeOut(300, function() {
-  //           $('.modal-title').text(prevTitle);
-  //         }).fadeIn(300);
-  //       }
-  //       return false;
-  //     });
-  //     $('.modal-body').append('<div class="control" id="next"><a href="#"></a></div>')
-  //     .on('click', '#next', function(){
-  //       var modalImage = $(this).parent().find('img'),
-  //           currentImage = modalImage.attr('src'),
-  //           project = $('.single-project[href*="'+ currentImage +'"]').closest('li'),
-  //           nextProject = project.next(),            
-  //           nextImage = nextProject.find('a').attr('href'),
-  //           nextTitle = nextProject.find('h3').text();
-  //       if (!project.is(':last-child')) {
-  //         modalImage.fadeOut(300, function() {
-  //           modalImage.attr('src', nextImage);
-  //         }).fadeIn(300);
-  //         $('.modal-title').fadeOut(300, function() {
-  //           $('.modal-title').text(nextTitle);
-  //         }).fadeIn(300);
-  //       }
-  //       return false;
-  //     });
-  //   });
-  //   $('body').addClass('modal-open');
-  //   return false;  
-  // });
-
-  // //Modal Close/Prev/Next
-  // $(document).keyup(function(e) {
-  //   if (e.keyCode == 27) {
-  //     $('#project-modal').modal('hide');
-  //   }
-  //   if (e.keyCode == 37) {
-  //     $('#prev').trigger('click');
-  //   }
-  //   if (e.keyCode == 39) {
-  //     $('#next').trigger('click');
-  //   }
-  // });
-
 
   //Contact form validation and submit with ajax
   $('#contact-form').validate({
