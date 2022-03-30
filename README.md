@@ -2,7 +2,9 @@
 
 ## Description
 
-This website is to highlight the projects and Javascript, HTML, and CSS skills I've aquired through the professional coding bootcamp for MERN stack web development.
+This website is to highlight the projects and coding skills I've aquired through the professional coding bootcamp for MERN stack web development.
+
+My Bootstrap themed portfolio site consists of two pages with a navigation bar. The first page is a landing page that includes my bio, video introduction of myself, history of my web development journey, and how best to contact me. The second page includes the projects I've completed and highlights the JavaScript, HTML, and CSS skills I've aquired through each project.
 
 The projects that I share on this site include:
 
