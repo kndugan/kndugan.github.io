@@ -61,7 +61,7 @@
           <li><a href="#about">About</a></li>
           <li><a href="#bio">Video Bio</a></li>
           <li><a href="#history">History</a></li>
-          <li><a href="projects.html">Projects</a></li>
+          <li><a href="#services">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
@@ -79,7 +79,7 @@
               <h1>Aloha!</h1>
               <h3>I'm Kristine, a web developer in Kauai, Hawaii.</h3>
               <a href="#about" class="btn btn-custom">Read more</a>
-              <a href="projects.html" class="btn btn-empty">View my projects</a>
+              <a href="#services" class="btn btn-empty">View my projects</a>
             </li>
             <li>
               <h1>My Passion Is</h1>
@@ -188,6 +188,135 @@
   </section>
   <!-- End Timeline -->
 
+  <!-- Project Summaries -->
+  <section id="services">
+    <div class="container">
+      <div class="title">
+        <h1>Project Summaries</h1>
+        <hr>
+      </div>
+      <div class="col-md-10 col-md-offset-1" id="services-box">        
+        <ul class="nav nav-tabs services">
+          <li class="animated hiding active" data-animation="flipInX" data-delay="0">
+            <a href="#service1" data-toggle="tab">
+              <i class="fa fa-bullseye"></i>              
+            </a>            
+          </li>
+          <li class="animated hiding" data-animation="flipInX" data-delay="500">
+            <a href="#service2" data-toggle="tab">
+              <i class="fa fa-gamepad"></i>              
+            </a>            
+          </li>
+          <li class="animated hiding" data-animation="flipInX" data-delay="1000">
+            <a href="#service3" data-toggle="tab">
+              <i class="fa fa-eye"></i>              
+            </a>            
+          </li>
+          <li class="animated hiding" data-animation="flipInX" data-delay="1500">
+            <a href="#service4" data-toggle="tab">
+              <i class="fa fa-map-marker"></i>              
+            </a>            
+          </li>
+        </ul>
+        <div class="tab-content animated hiding" id="service-detail" data-animation="fadeInUp">
+          <div class="tab-pane fade in active" id="service1">
+            <h3>Bouncing Balls</h3>
+            <p>In this project, I've used JavaScript to create an area and boundry for three separate balls to bounce independently at different speeds and at random angles. The movement patterns are designed to have the balls move within the parameters randomly via the x and y axis.</p>
+            <a target="_blank" href="https://github.com/kndugan/random-bouncing-balls" class="btn btn-dark">GitHub</a>
+            <a target="_blank" href="https://kndugan.github.io/random-bouncing-balls" class="btn btn-empty-two">Pages</a>
+          </div>
+          <div class="tab-pane fade" id="service2">
+            <h3>PacMen</h3>
+            <p>The most popular game from the 1980s is back in action! In this project, the user can create multiple PacMen with the click of a button and each of them will begin to move about the browser window at their own pace. This PacMen game is an example of utilizing JavaScript to create the Pacmen by pushing them into an array and then injecting the PacMen to the web browser via the DOM.</p>
+            <a target="_blank" href="https://github.com/kndugan/pacmen" class="btn btn-dark">GitHub</a>
+            <a target="_blank" href="https://kndugan.github.io/pacmen" class="btn btn-empty-two">Pages</a>
+          </div>
+          <div class="tab-pane fade" id="service3">
+            <h3>Eyes</h3>
+            <p>In this project, the eyes will automatically begin tracking and following in unison the cursor anywhere on the browser window. The eyes were created with CSS and JavaScript was used to track the cursor.</p>
+            <a target="_blank" href="https://github.com/kndugan/eye-movement" class="btn btn-dark">GitHub</a>
+            <a target="_blank" href="https://kndugan.github.io/eye-movement" class="btn btn-empty-two">Pages</a>
+          </div>
+          <div class="tab-pane fade" id="service4">
+            <h3>Bus Tracker</h3>
+            <p>In this project, I demonstrate a web application using the MapBox API to create and display a map of Kauai, Hawaii. By utilizing JavaScript and HTML I've create a Map Marker to show bus stops between Lihue and Hanalai on Kauai.</p>
+            <a target="_blank" href="https://github.com/kndugan/real-time-bus-tracker" class="btn btn-dark">GitHub</a>
+            <a target="_blank" href="https://kndugan.github.io/real-time-bus-tracker" class="btn btn-empty-two">Pages</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Project Summaries -->
+
+  <!-- Project Skills -->
+  <section id="works" class="grey">
+    <div class="container">
+      <div class="title">
+        <h1>Project Skills</h1>
+        <hr>
+      </div>
+      <ul id="filters">
+        <li class="filter active" data-filter="all">All</li>
+        <li class="filter" data-filter="html">HTML</li>        
+        <li class="filter" data-filter="css">CSS</li>
+        <li class="filter" data-filter="javascript">JavaScript</li>
+      </ul>
+      <ul id="projects">
+        <li class="mix javascript mix_all">
+          <a target="_blank" href="https://kndugan.github.io/random-bouncing-balls" class="single-project">
+            <img src="images/portfolio/ball.jpg" alt="Bouncing Ball Exercise">
+            <div class="overlay">
+              <h3>Bouncing Balls</h3>
+              <span>JavaScript</span>
+            </div>
+          </a>       
+        </li>
+        <li class="mix javascript mix_all">
+          <a target="_blank" href="https://kndugan.github.io/pacmen" class="single-project">
+            <img src="images/portfolio/pacman.jpg" alt="Pac-Man Exerces">
+            <div class="overlay">
+              <h3>PacMen</h3>
+              <span>JavaScript</span>
+            </div>
+          </a>       
+        </li>
+        <li class="mix css mix javascript mix_all">
+          <a target="_blank" href="https://kndugan.github.io/eye-movement" class="single-project">
+            <img src="images/portfolio/eye.jpg" alt="Eye Movement Exercise">
+            <div class="overlay">
+              <h3>Eyes</h3>
+              <span>HTML + CSS</span>
+            </div>
+          </a>       
+        </li>
+        <li class="mix javascript mix html mix_all">
+          <a target="_blank" href="https://kndugan.github.io/real-time-bus-tracker" class="single-project">
+            <img src="images/portfolio/bus-tracker.jpg" alt="Real Time Bus Tracker Exercise">
+            <div class="overlay">
+              <h3>Bus Tracker</h3>
+              <span>JavaScript + HTML</span>
+            </div>
+          </a>       
+        </li>
+      </ul>
+    </div>    
+  </section>
+  <!-- End Project Skills -->
+
+   <!-- Call to Action -->
+   <section id="call-to-action" class="parallax">
+    <div class="container">
+      <div class="call">
+        <h1>Let's Talk About Your New Project</h1>
+        <hr>
+        <h4>I love digital marketing and my passion is in helping business owners look great online so they can increase their bottomline. Let's connect to explore how I can help you.</h4>
+        <a href="#contact" class="btn btn-empty">Get In Touch</a>
+      </div>
+    </div>
+  </section>
+  <!-- End Call to Action -->
+
   <!-- Contact -->
   <section id="contact">
     <div class="container">
@@ -236,7 +365,7 @@
           <a target="_blank" href="https://www.linkedin.com/in/kristinedugan/"><i class="fa fa-linkedin fa-2x"></i></a>
         </li>
       </ul>
-      <h5 class="footer-text">Designed wtih Aloha ❤ by Kristine Dugan. | &copy; 2022 All Rights Reserved.</h5>
+      <h5 class="footer-text">Designed wtih Aloha ❤ by Kristine Dugan | &copy; 2022 All Rights Reserved.</h5>
     </div>
   </footer>
   <!-- End Footer -->
